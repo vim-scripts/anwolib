@@ -1,0 +1,70 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3800
+
+Library to support (my) posts on the vim_use mailing list.
+
+Documentation: check comments in the source code
+
+
+FILES IN THE ARCHIVE
+
+autoload\nwo\lib.vim  (stand-alone)
+autoload\nwo\gvmap.vim  (included for cmds.vim)
+plugin\cmds.vim  (cmds frontend)
+autoload\cmds.vim  (cmds implementation)
+
+
+FUNCTIONS / COMMANDS
+
+autoload\nwo\lib.vim
+nwo#lib#Avail(varname)
+nwo#lib#BG(varname, ...)
+nwo#lib#CmdlineWidth()
+nwo#lib#CollEscape(str)
+nwo#lib#ExpandTabs(line, ...)
+nwo#lib#ExpandTabs_Mbyte(line, ...)
+nwo#lib#ExtendUniq(baselist, append, ...)
+nwo#lib#FargsList(str)
+nwo#lib#FitEcho(str)
+nwo#lib#FitStr(str)
+nwo#lib#Flatten1(list)
+nwo#lib#GetPlaceHolder(str)
+nwo#lib#Let(val, expr, ...)
+nwo#lib#MagicEscape(pat, ...)
+nwo#lib#MenuEscape(entry)
+nwo#lib#NotEsc(esc_char)
+nwo#lib#PairList(list1, list2)
+nwo#lib#ReplEscape(repl, ...)
+nwo#lib#Rot13(str)
+nwo#lib#SlashEscape(str, ...)
+nwo#lib#SoftTabstop(vcol)
+nwo#lib#SpacesToTabs(line, ...)
+nwo#lib#SpacesToTabs_Mbyte(line, ...)
+nwo#lib#Split1(str)
+nwo#lib#Substract(list1, list2)
+nwo#lib#TruncFilename(filename, maxlen)
+nwo#lib#TruncStr(str, maxlen)
+nwo#lib#Uniq(list)
+
+autoload\nwo\gvmap.vim
+
+plugin\cmds.vim
+:KeepView {cmd}     
+:With {setlocal-args} Do {cmd}   
+:InFunc[!] {cmd}     
+:InFuncCount {cmd}     
+:Fsnorm[!] {normal-cmds}    
+
+
+
+Yeah, I know, there are dozens of other libraries ...
+genutils, vimscript #197 (Hari Krishna Dara)
+lh-vim-lib, vimscript #214 (Luc Hermitte), http://code.google.com/p/lh-vim/wiki/lhVimLib
+cecutil, vimscript #1066 (DrChip), http://drchip.0sites.net/astronaut/vim/index.html#CECUTIL
+tlib, vimscript #1863 (Thomas Link), http://github.com/tomtom/
+TOVL, vimscript #1963 (Marc Weber), http://github.com/MarcWeber/theonevimlib
+l9, vimscript #3252 (Takeshi Nishida), https://bitbucket.org/ns9tks/vim-l9/
+(Tim Pope vimuser #9012, Kana Natsuno vimuser #13595, ...)
+etc!!
+
+
+2011 Nov 08
